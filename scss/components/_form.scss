@@ -1,0 +1,409 @@
+.form-style-bg {
+	.form-control {
+		background: $gray-100;
+		border-color: $gray-200;
+	}
+}
+.form-style-icon {
+    .form-group {
+        position: relative;
+        i {
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            top:50%;
+            margin-top: -10px;
+            line-height: 18px;
+        }
+        input {
+            padding-left: 32px;
+            &.form-control-lg {
+                padding-left: 35px;
+            }
+        }
+    }
+}
+.form-style-label {
+    .form-group {
+        position: relative;
+        .form-control {
+            padding-left: 100px;
+            font-size: 13px !important ;
+        }
+        .form-label {
+            position: absolute;
+            left: 15px;
+            top:50%;
+            margin-top: -12px;
+            font-size: 13px;
+        }
+        i {
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            top:50%;
+            margin-top: -14px;
+        }
+    }
+}
+.form-style-border {
+    .form-control {
+        border: 0px;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-color: $gray-300;
+        padding-left: 25px;
+        border-radius: 0;
+        &::-webkit-input-placeholder {  font-size: 13px; color:$gray-500;}
+        &::-moz-placeholder {  font-size: 13px; color:$gray-500;}
+        &:-ms-input-placeholder {  font-size: 13px; color:$gray-500;}
+        &:-moz-placeholder {  font-size: 13px; color:$gray-500;}
+    }
+    .form-group {
+        position: relative;
+        i {
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            top:50%;
+            margin-top: -10px;
+        }
+    }
+}
+.form-style-floating {
+    &.was-validated .form-control:invalid {
+        border-color: $danger !important;
+    }
+    &.was-valid .form-control:valid {
+        border-color: #success !important;
+    }
+    .form-control-sm {
+        height: calc(3rem + 2px);
+        padding: 0.75rem;
+        & + label {
+            padding: 0.75rem;
+            font-size: $h5-font-size;
+        }
+    }
+    .form-floating > i {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -7px;
+    }
+
+    i.border-end {
+        border-right:0 !important;
+        position: relative;
+        top:1px;
+        left:4px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        &:after {
+            content: '';
+            position: absolute;
+            top:50%;
+            width: 1px;
+            height: 18px;
+            margin-top: -11px;
+            right:0;
+            background-color: $gray-300;
+        }
+    }
+
+    &.style2 {
+        .form-control {
+            border: 1px solid $gray-300;
+            padding: 10px 10px;
+            line-height: 20px;
+            height: 55px;
+            font-family: 'RajdhaniSemiBold' !important;
+            font-size: 17px !important;
+            &.form-control-sm {
+                height: 47px;
+            }
+        }
+        label {
+            padding: 0 5px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 17px;
+            top:50%;
+            margin-top: -12px;
+            left:10px;
+            color:$gray-900;
+            background-color: #fff;
+            font-family: 'RajdhaniSemiBold';
+        }
+        .form-floating > .form-control.form-control-sm ~ label {font-size: $h5-font-size;}
+        .form-floating > .form-control:focus ~ label,
+        .form-floating > .form-control:not(:placeholder-shown) ~ label,
+        .form-floating > .form-select ~ label {
+            opacity: 1;
+            color:$gray-600;
+            transform: scale(0.85) translateY(-1.9rem) translateX(0.15rem) !important;
+        }
+        .form-floating > .form-control.form-control-sm:focus ~ label,
+        .form-floating > .form-control.form-control-sm:not(:placeholder-shown) ~ label,
+        .form-floating > .form-control.form-control-sm > .form-select ~ label {
+            opacity: 0.7;
+            transform: scale(0.85) translateY(-1.5rem) translateX(0.15rem) !important;
+        }
+        .invalid-feedback,
+        .valid-feedback {
+            position: absolute;
+            margin-top: 0;
+            font-size: 0.75rem;
+            line-height: 15px;
+        }
+    }
+
+    &.style3 {
+        .form-control {
+            border: 0px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-color: $gray-300;
+            padding: 10px 0px;
+            line-height: 20px;
+            height: 55px;
+            border-radius: 0 !important;
+            &.form-control-sm {
+                height: 47px;
+            }
+        }
+        label {
+            padding: 0px;
+            height: 20px;
+            font-size: 15px;
+            top:50%;
+            margin-top: -12px;
+            left:0px;
+            background-color: #fff;
+            color: $gray-600;
+        }
+        .form-floating > .form-control:focus ~ label,
+        .form-floating > .form-control:not(:placeholder-shown) ~ label,
+        .form-floating > .form-select ~ label {
+            opacity: 1;
+            transform: scale(0.85) translateY(-1.7rem) translateX(0rem) !important;
+        }
+        .form-floating > .form-control:focus {
+            border-color: #000;
+        }
+        .form-floating > i {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -7px;
+        }
+
+        .invalid-feedback,
+        .valid-feedback {
+            position: absolute;
+            margin-top: 0;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+
+
+// UPLOAD BUTTON
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  + .js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 14px; 
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 10px;
+    &.btn-tertiary {
+        color: #555;
+        padding: 0;
+        line-height: 30px;
+        margin: auto;
+        display: block;
+        font-size: 14px;
+        border-radius: 5px;
+        &:hover, 
+        &:focus {
+          color: lighten(#555, 20%);
+          border-color: lighten(#555, 20%);
+        }
+    }
+    i {
+        font-size: 24px;
+        position: relative;
+        &.large-icon {
+          font-size: 42px;
+        }
+    }
+    &.has-file {
+      i {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+.form-stepper {
+    .steps {
+        ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                flex: 1 0 0%;
+                text-align: center;
+                a {
+                    font-size: 12px;
+                    color: #999;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .current-info {display: none;}
+                .number {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 45px;
+                    align-items: center;
+                    justify-content: center;
+                    display: inline-block;
+                    background-color: #f5f5f5;
+                    color: #444;
+                    text-align: center;
+                    line-height: 45px;
+                    margin: 0 auto;
+                }
+                &.current {
+                    .number {
+                        background-color: var(--theme-color-tint);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .actions {
+        display: block;
+        margin: 0px 0 15px 0;
+        float: right;
+        ul{
+            display: flex;
+            column-gap: 10px;
+            margin-top: 20px;
+
+            li:nth-child(2) {
+                a {
+                    background-color: var(--theme-color-tint);
+                    color: #fff;
+                }
+            }    
+        }
+        
+        a {
+            padding: 15px 30px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            color: #000;
+        }
+    }
+    .error {
+        font-size: 12px;
+        color: $danger;
+    }
+    label.error {
+        position: absolute;
+        left:0;
+        bottom:-20px;
+    }
+    .title {
+        display: none;
+        padding: 15px 0;
+        font-size: 16px;
+        &.current {
+            display: none;
+        }
+    }
+    .form-group {
+        float: left;
+        width: 100%;
+        position: relative;
+
+    }
+    .content {
+        margin-top: 25px;
+    }
+}
+
+
+
+
+.form-select {
+    &.form-control-xs {
+        padding: 5px 9px; 
+        background-size: 12px;
+        background-position: right 0.2rem center;
+    }
+}
+
+.placeholder-text-gray-500 {
+    &::-webkit-input-placeholder { color:$gray-500 !important; font-family: 'RajdhaniMedium'; }
+    &::-moz-placeholder { color:$gray-500 !important; font-family: 'RajdhaniMedium'; }
+    &:-ms-input-placeholder { color:$gray-500 !important; font-family: 'RajdhaniMedium'; }
+    &:-moz-placeholder { color:$gray-500 !important; font-family: 'RajdhaniMedium';}    
+}
+.placeholder-text-gray-700 {
+    &::-webkit-input-placeholder { color:$gray-700 !important;}
+    &::-moz-placeholder { color:$gray-700 !important;}
+    &:-ms-input-placeholder { color:$gray-700 !important;}
+    &:-moz-placeholder { color:$gray-700 !important;}   
+}
+.placeholder-text-gray-800 {
+    &::-webkit-input-placeholder { color:$gray-800 !important;}
+    &::-moz-placeholder { color:$gray-800 !important;}
+    &:-ms-input-placeholder { color:$gray-800 !important;}
+    &:-moz-placeholder { color:$gray-800 !important;}   
+}
+.form-control-lg-placeholder {
+    &::-webkit-input-placeholder { font-size: $font-xssss !important;}
+    &::-moz-placeholder { font-size: $font-xssss !important;}
+    &:-ms-input-placeholder { font-size: $font-xssss !important;}
+    &:-moz-placeholder { font-size: $font-xssss !important;}   
+}
+.form-control-xl-placeholder {
+    &::-webkit-input-placeholder { font-size: $font-lg !important;}
+    &::-moz-placeholder { font-size: $font-lg !important;}
+    &:-ms-input-placeholder { font-size: $font-lg !important;}
+    &:-moz-placeholder { font-size: $font-lg !important;}   
+}
+
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    // -webkit-text-fill-color:$gray-500;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

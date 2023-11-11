@@ -1,0 +1,141 @@
+#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100% !important;
+	opacity: 1;
+	&.block {
+		display: block;
+	}
+  	&.theme-dark {
+    	background:#000 ;
+  	}
+  	&.hide {
+	    opacity: 0;
+	    display: none;
+	    pointer-events: none;
+	    transition: all 150ms ease !important;
+	}
+	&.placeholder {
+		position: relative;
+		z-index: 1;
+	}
+	.placeholder-xl {
+	  min-height: 1.5em;
+	}
+	.placeholder-xxl {
+	  min-height: 2em;
+	}
+	.placeholder-xxxl {
+	  min-height: 3em;
+	}
+}
+
+.circle {
+  position: absolute;
+  border: 3px solid transparent;
+  border-top-color: #9ee925;
+  border-radius: 50%;
+  -webkit-animation: rotate linear infinite;
+          animation: rotate linear infinite;
+}
+.circle.one {
+  height: 50px;
+  width: 50px;
+  left: 50px;
+  top: 50px;
+  -webkit-animation-duration: 0.85s;
+          animation-duration: 0.85s;
+}
+.circle.two {
+  height: 75px;
+  width: 75px;
+  top: 38px;
+  left: 38px;
+  -webkit-animation-duration: 0.95s;
+          animation-duration: 0.95s;
+}
+.circle.three {
+  height: 100px;
+  width: 100px;
+  top: 25px;
+  left: 25px;
+  -webkit-animation-duration: 1.05s;
+          animation-duration: 1.05s;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -90px 0 0 -90px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+
+
+.preloader-wrap {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0; 
+	bottom: 0;
+	background: rgba(255,255,255,1);
+	z-index : 2000;
+	text-align:center;
+}
+
+.percentage {
+	z-index: 100;
+	color: #000;
+	opacity:1;
+	font-weight: 700;
+	font-size:200px;
+	line-height:200px;
+	color:rgba(0,0,0,0.05);
+}
+
+.trackbar {
+	width: 20vw;
+	height: 1px;
+	background: rgba(0,0,0,0.2);
+	margin: 0 auto;
+	position: fixed;
+	bottom:100px;
+	left:40vw;
+	opacity: 1;
+}
+
+.loadbar {
+	width: 0%;
+	height: 1px;
+	background: rgba(0,0,0,1); 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0 auto;
+	overflow: hidden;
+}

@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------
+    Theme Name: Metatech
+    Theme URI: https://uitheme.net/metatech/
+    Author: Uttam D
+    Author URI: http://uitheme.net/
+    Description: NFT Marketplace HTML Template
+    Version: 1.0.0
+-------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+    Table of Content: 
+    
+    
+    1. Abstrac
+    2. Bootstrap CSS
+    3. Base
+    4. Component
+    5. Pages
+    7. Header
+    8. Footer
+    
+    
+*/
+
+@import "./abstract/abstract";
+@import "./../vendor/icon/feather.css";
+@import "./../vendor/icon/bootstrap-icons.css";
+@import "./../vendor/bootstrap/scss/bootstrap.scss";
+@import "./../vendor/owl-carousel/owl.carousel.min.css";
+@import "./../vendor/owl-carousel/owl.theme.default.min.css";
+
+
+
+@import "./base/base";
+@import "./components/components";
+@import "./pages/pages";
+
+
+
+
+

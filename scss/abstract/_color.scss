@@ -1,0 +1,46 @@
+.theme-dark {background-color: #1a2236; } 
+.text-current {color: var(--theme-color) !important;}
+.text-current-shade {color: var(--theme-color-shade) !important;}
+.text-current-light {color: var(--theme-color-light) !important;}
+.bg-current {background-color: var(--theme-color) !important;}
+.bg-current-deep {background-color: var(--theme-color-deep) !important;}
+.bg-current-shade {background-color: var(--theme-color-light) !important;}
+.bg-current-tint {background-color: var(--theme-color-tint) !important;}
+.bg-current-gradiant {background: linear-gradient(135deg,var(--theme-color),var(--theme-color-deep)) !important;}
+.bg-primary-gradiant {background: linear-gradient(135deg,#05f,#09f) !important;}
+.bg-gold-gradiant {background: linear-gradient(to right, #f2994a, #f2c94c)!important;}
+.bg-red-gradiant {background:  linear-gradient(to right, #e44d26, #f16529)!important;}
+.bg-mini-gradiant {background:linear-gradient(to right, #ee0979, #ff6a00) !important;}
+.bg-blue-gradiant {background: #2B0A71;}
+.bg-social-gradiant {background: linear-gradient(to right, red, orange) !important;}
+
+
+.bg-gradiant-1 {background: linear-gradient(180deg, #e5edbe, #bdcd8c) !important;}
+.bg-gradiant-2 {background: linear-gradient(180deg, #cfebd2, #a9ccac) !important;}
+.bg-gradiant-3 {background: linear-gradient(180deg, #d3eaf2, #9ccbd1) !important;}
+.bg-gradiant-4 {background: linear-gradient(180deg, #fad0a8, #d7b58e) !important;}
+.bg-gradiant-4 {background: linear-gradient(180deg, #fad0a8, #d7b58e) !important;}
+
+.border-current {border-color:  var(--theme-color) !important;}
+.border-current-tint {border-color:  var(--theme-color-tint) !important;}
+.border-current-shade {border-color:  var(--theme-color-shade) !important;}
+
+.bg-black-shade-bottom:after {content: ''; background: linear-gradient(0deg, #000, transparent); width: 100%; height: 300px; position: absolute; bottom:0; left:0; }
+.bg-black-shade-bottom-75:after {content: ''; background: linear-gradient(0deg, #000, transparent); width: 100%; height: 75%; position: absolute; bottom:0; left:0; }
+.bg-black-shade-top:before {content: ''; background: linear-gradient(180deg, #000, transparent); width: 100%; height: 200px; position: absolute; top:0; left:0; }
+
+.bg-white-15 {background-color: rgba(255,255,255,.15) !important;}
+.bg-white-25 {background-color: rgba(255,255,255,.25) !important;}
+.bg-white-40 {background-color: rgba(255,255,255,.40) !important;}
+.bg-white-50 {background-color: rgba(255,255,255,.50) !important;}
+.bg-white-75 {background-color: rgba(255,255,255,.75) !important;}
+
+.bg-black-15 {background-color: rgba(0,0,0,.15) !important;}
+.bg-black-25 {background-color: rgba(0,0,0,.25) !important;}
+.bg-black-40 {background-color: rgba(0,0,0,.40) !important;}
+.bg-black-50 {background-color: rgba(0,0,0,.50) !important;}
+.bg-black-75 {background-color: rgba(0,0,0,.75) !important;}
+
+.bg-dark2 {background: #262626;}
+
+

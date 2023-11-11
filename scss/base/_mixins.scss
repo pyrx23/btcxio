@@ -1,0 +1,47 @@
+
+
+@each $gray, $value in $grays {
+    .text-gray-#{$gray} {color:#{$value} !important;}
+}
+@each $gray, $value in $grays {
+    .bg-gray-#{$gray} {background-color:#{$value} !important;}
+}
+
+@each $fw, $value in $fws {
+    .fw-#{$fw} {font-weight:#{$value} !important;}
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color}{
+        background-color: $value !important;
+  }
+  .text-#{$color}{
+    color: $value !important;
+  }
+}
+
+
+
+@mixin webkit-box() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin box-flex() {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+@mixin box-orient() {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}

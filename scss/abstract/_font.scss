@@ -1,0 +1,92 @@
+
+@font-face {
+  font-family: 'RajdhaniRegular';
+  src: url('../fonts/Rajdhani-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+@font-face {
+  font-family: 'RajdhaniSemiBold';
+  src: url('../fonts/Rajdhani-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+@font-face {
+  font-family: 'RajdhaniMedium';
+  src: url('../fonts/Rajdhani-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+@font-face {
+  font-family: 'RajdhaniBold';
+  src: url('../fonts/Rajdhani-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../fonts/Audiowide-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+
+
+
+@font-face {
+  font-family: 'InterRegular';
+  src: url('../fonts/Inter-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+@font-face {
+  font-family: 'InterMedium';
+  src: url('../fonts/Inter-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+@font-face {
+  font-family: 'InterSemiBold';
+  src: url('../fonts/Inter-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+@font-face {
+  font-family: 'InterBold';
+  src: url('../fonts/Inter-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+@font-face {
+  font-family: 'RacingSansOne';
+  src: url('../fonts/RacingSansOne-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */       
+}
+
+
+
+ 
+ 
+.inter-400 {
+  font-family: InterRegular !important;
+}
+.inter-500 {
+  font-family: InterMedium !important;
+}
+.inter-600 {
+  font-family: InterSemiBold !important;
+}
+.inter-700 {
+  font-family: InterBold !important;
+}
+.racing-700 {
+  font-family: RacingSansOne !important;
+}
+.audiowide-400 {
+  font-family: Audiowide !important;
+}
+
+
+
+
+body {
+  font-family: RajdhaniMedium !important;
+}
+h6, p {
+  font-family: RajdhaniMedium !important;
+}
+
+.rajdhani-400 {
+  font-family: RajdhaniRegular !important;
+}
+.rajdhani-500 {
+  font-family: RajdhaniMedium !important;
+}
+.rajdhani-600 {
+  font-family: RajdhaniSemiBold !important;
+}
+.rajdhani-700 {
+  font-family: RajdhaniBold !important;
+}
+ 

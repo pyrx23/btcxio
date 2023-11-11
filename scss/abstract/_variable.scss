@@ -1,0 +1,424 @@
+////////////////////////////////////////////////////
+//---------------- C O L O R ----------------------
+///////////////////////////////////////////////////
+
+
+//to ignore cli warning about deprecated mixin
+// $enable-deprecation-messages: false;
+// $ignore-warning             : true;
+
+
+// stylelint-disable-next-line scss/dollar-variable-default
+
+$primary    :    #1E74FD !default;
+$secondary  :    #673BB7 !default;
+$success    :    #10d876 !default;
+$info       :    #2754e6 !default;
+$warning    :    #FE9431 !default;
+$danger     :    #E50202 !default;
+$light      :    #f5f5f5 !default;
+$light2     :    #6C7C94 !default;
+$dark       :    #343a40 !default;
+
+$blue       :    #0d6efd !default;
+$indigo     :    #6610f2 !default;
+$purple     :    #6f42c1 !default;
+$pink       :    #d63384 !default;
+$red        :    #dc3545 !default;
+$orange     :    #fd7e14 !default;
+$yellow     :    #ffc107 !default;
+$green      :    #198754 !default;
+$teal       :    #20c997 !default;
+$cyan       :    #0dcaf0 !default;
+
+$white      :    #fff !default;
+$gray-100   :    #f8f9fa !default;
+$gray-200   :    #e9ecef !default;
+$gray-300   :    #dee2e6 !default;
+$gray-400   :    #ced4da !default;
+$gray-500   :    #adb5bd !default;
+$gray-600   :    #6c757d !default;
+$gray-700   :    #495057 !default;
+$gray-800   :    #343a40 !default;
+$gray-900   :    #212529 !default;
+$black      :    #000 !default;
+
+$facebook   :    #0d66ff !default;  
+$messenger  :    #55acee !default;  
+$twitter    :    #3b5999 !default;  
+$linkedin   :    #0077B5 !default;  
+$skype      :    #00AFF0 !default;  
+$pinterest  :    #bd081c !default;  
+$instagram  :    #e4405f !default;  
+$flicker    :    #ff0084 !default;  
+$whatsup    :    #25D366 !default;  
+$tumblr     :    #34465d !default;  
+$youtube    :    #cd201f !default;
+
+
+$deepgreen  :    #12670a !default;
+$greyblue   :    #f6f7fc !default;
+$lightblue  :    #e8f1fa !default;
+$bluelight  :    #f7f9fd !default;
+$bluelight2  :   #DBEEF5 !default;
+$bluelight3  :   #F8FFFB !default;
+
+$lightbrown :    #fdfbf4 !default;
+// f9f4e1
+$brownlight :    #f7ede1 !default;
+$lightgold  :    #fafad2 !default;
+$lightcayan :    #e0ffff !default;
+$lightpink  :    #F492CF !default;
+$deeppink   :    #FF1493 !default;
+$lightgreen :    #90EE90 !default;
+$lightgreen2:    #F2FAF4 !default;
+$lightpurple:    #fae1fe !default;
+$darkyellow:     #B8FB04 !default;
+$lightyellow:    #FFE948 !default;
+$darkgreen:      #003A1B !default;
+$darkblue:       #1B034E !default;
+$darkblack:      #000 !default;
+$lightcyan:      #F6FBFC !default;
+$lightblue2:     #E2EAE8 !default;
+
+
+
+
+
+
+
+
+
+
+
+$colors: (
+  "blue"      :          $blue,
+  "indigo"    :          $indigo,
+  "purple"    :          $purple,
+  "pink"      :          $pink,
+  "red"       :          $red,
+  "orange"    :          $orange,
+  "yellow"    :          $yellow,
+  "green"     :          $green,
+  "teal"      :          $teal,
+  "cyan"      :          $cyan,
+  "white"     :          $white,
+  "gray"      :          $gray-600,
+  "gray-dark" :          $gray-800,
+  
+  "facebook"  :          $facebook,
+  "messenger" :          $messenger,
+  "twitter"   :          $twitter,
+  "linkedin"  :          $linkedin,
+  "skype"     :          $skype,
+  "pinterest" :          $pinterest,
+  "instagram" :          $instagram,
+  "flicker"   :          $flicker,
+  "whatsup"   :          $whatsup,
+  "tumblr"    :          $tumblr,
+  "youtube"   :          $youtube,
+
+  "brownlight":          $brownlight,
+  "deepgreen" :          $deepgreen,
+  "greyblue"  :          $greyblue,
+  "lightblue" :          $lightblue,
+  "bluelight" :          $bluelight,
+  "lightbrown":          $lightbrown,
+  "lightgold" :          $lightgold,
+  "lightcayan":          $lightcayan,
+  "lightpink" :          $lightpink,
+  "deeppink"  :          $deeppink,
+  "lightgreen":          $lightgreen,
+  "lightgreen2":         $lightgreen2, 
+  "lightpurple":         $lightpurple,
+  "darkyellow":         $darkyellow,
+  "darkgreen":          $darkgreen,  
+  "darkblue":           $darkblue,  
+  "lightyellow":        $lightyellow,  
+  "darkblack":          $darkblack,  
+  "bluelight2":          $bluelight2,  
+  "bluelight3":          $bluelight3,  
+  "lightcyan":          $lightcyan, 
+  "lightblue2":          $lightblue2, 
+
+  
+
+  
+  
+  
+  
+  
+
+) !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "light2":     $light2,
+  "dark":       $dark
+);
+
+
+
+// Body
+$body-bg   : #fff;
+$body-color: #515184;
+$enable-negative-margins: true;
+
+
+////////////////////////////////////////////////////
+//---------------- SIZE VARIABLE ----------------------
+///////////////////////////////////////////////////
+
+
+$size-px: (5:  5px,6: 6px,10: 10px,12: 12px,15: 15px,20: 20px,26: 25px,30: 30px,35: 35px,40: 40px,45: 45px,51: 50px,55: 55px,60: 60px,65: 65px,70: 70px,76: 75px,80: 80px,90: 90px,110: 100px,111: 110px,120: 120px,125: 125px,135: 135px,150: 150px,160: 160px,175: 175px,200: 200px,225: 225px,250: 250px,275: 275px,300: 300px,350: 350px,320: 320px,370: 370px,400: 400px,450: 450px,500: 500px,600: 600px, ) !default;
+$length-px: (6: 5px,10: 10px,15: 15px,20: 20px,25: 25px,50: 50px,75: 75px,100: 100px,120: 120px,125: 125px,150: 150px,175: 175px,200: 200px,225: 225px,250: 250px, ) !default;
+$lineheight-px: (14: 14px,18: 18px,20: 20px,22: 22px,24: 24px,26: 26px,28: 28px,30: 30px,32: 32px,34: 34px,36: 36px,38: 38px, ) !default;
+$opacity: (0: 0,25: .25,50: .5,75: .75,100: 1, ) !default;
+$zindex: (10: 10,20: 20,30: 30,40: 40,50: 50,60: 60,70: 70,80: 80,90: 90,100: 100, ) !default;
+$space-px: (0: 0px,10: 10px,15: 15px,20: 20px,25: 25px,50: 50px,75: 75px,100: 100px,) !default;
+
+
+////////////////////////////////////////////////////
+//---------------- F O N T S ----------------------
+///////////////////////////////////////////////////
+
+
+
+
+
+$headings-font-weight   : 400;
+
+$font-size-base         : 1rem;
+$font-weight-base       : 400 !default;
+
+
+$h1-font-size         : 42px;
+$h2-font-size         : 36px;
+$h3-font-size         : 32px;
+$h4-font-size         : 28px;
+$h5-font-size         : 24px; 
+$h6-font-size         : 18px; 
+
+
+$display1-size  			:  56px; 
+$display2-size  			:  65px; 
+$display3-size  			:  75px; 
+$display4-size  			:  85px; 
+$display5-size        :  95px;
+$display6-size        :  115px;
+$display7-size        :  135px;
+$display8-size        :  125px;
+$display9-size        :  135px;
+
+$font-xssss           : 11px;
+$font-xsss            : 12px;
+$font-xss             : 13px;
+$font-xs              : 14px;
+$font-sm              : 16px;
+$font-md              : 20px;
+$font-lg              : 22px;
+$font-xl              : 26px;
+$font-xxl             : 30px;
+
+$text-muted : #AEAED5;
+$colors     : () !default;
+
+
+$heading-primary-size: 1.8rem;
+$sub-heading-size    : 1.6rem !default;
+$grid-gutter-width   : 30px;
+$dropdown-lik-color  : $body-color;
+$border-color        : #E1E1F0;
+$headings-color      :#111 !default;
+$grid-breakpoints    : (xs: 0, se: 321px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px , xxxl: 1600px);
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1100px) !default;
+
+$input-btn-focus-width: 0rem !default;
+$border-radius-base   : 4px !default;
+
+$shadow-color: rgba(160, 159, 202, 0.15);
+
+
+
+////////////////////////////////////////////////////
+//---------------- NAVIGATION ----------------------
+///////////////////////////////////////////////////
+$nav-padding:20px;
+$nav-width:280px;
+$nav-logo-height:75px;
+$nav-menu-link-margin:1px 15px; 
+
+
+$nav-footer-icon-padding:6px 20px;
+$nav-footer-icon-size:25px;
+
+$left-sidebar-width:270px;
+$right-sidebar-header-height:80px;
+
+$dropdown-menu-width:300px;
+$setting-color-width:32px;
+$setting-toggle-width:20px; 
+
+// CUSTOMIZE DROPDOWN PANEL
+// $dropdown-menu-width:300px;
+$dropdown-min-width:                7rem;
+$dropdown-padding-x:                0;
+$dropdown-padding-y:                .4rem;
+$dropdown-spacer:                   .125rem;
+$dropdown-font-size:                $font-xssss;
+
+$setting-color-width:32px;
+$setting-toggle-width:20px; 
+
+
+
+
+
+$form-check-input-width: 1.2em;
+$form-check-padding-start: $form-check-input-width + 1em;
+
+
+
+////////////////////////////////////////////////////
+//---------------- ACCORDION ------------------
+///////////////////////////////////////////////////
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+$accordion-icon-width:                    1rem;
+$accordion-icon-color:                    #aaa;
+$accordion-border-color:                  rgba($black, .07);
+$accordion-button-active-bg:              rgba($black, 0);
+$accordion-button-active-color:           rgba($black, .07);
+$accordion-icon-active-color:             #aaa;
+
+
+
+$nav-link-color:                    $gray-600;
+$nav-tabs-link-active-color:        $gray-900;
+
+
+////////////////////////////////////////////////////
+//---------------- BUTTON & INPUT ------------------
+///////////////////////////////////////////////////
+$input-btn-font-size-xs:      12px;
+$input-btn-font-size:         13px;
+$input-btn-font-size-sm:      14px;
+$input-btn-font-size-lg:      15px;
+
+$btn-padding-y:   10px;
+$btn-padding-x:   15px;
+
+
+$btn-padding-y-sm: 12px;
+$btn-padding-x-sm: 20px;
+
+$btn-padding-y-lg: 14px;
+$btn-padding-x-lg: 24px;
+
+$btn-border-width: 2px;
+
+$btn-font-size:               $input-btn-font-size;
+$btn-font-size-sm:            $input-btn-font-size-sm;
+$btn-font-size-lg:            $input-btn-font-size-lg;
+
+$input-btn-padding-y-sm:      .5rem;
+$input-btn-padding-x-sm:      .5rem;
+
+
+$input-btn-padding-y-lg:      0.9rem;
+$input-btn-padding-x-lg:      1rem;
+
+
+$input-btn-padding-y:         .7rem;
+$input-btn-padding-x:         .75rem;
+$input-btn-font-family:       null;
+
+
+
+////////////////////////////////////////////////////
+//---------------- TABLE ----------------------
+///////////////////////////////////////////////////
+
+$table-cell-padding-y:        .7rem;
+$table-cell-padding-x:        .7rem;
+$table-cell-vertical-align:   middle;
+$table-th-font-weight:        500;
+$table-group-separator-color: transparent;
+$table-striped-bg:            $gray-100;
+$table-border-color:          #f5f5f5;
+
+
+////////////////////////////////////////////////////
+//---------------- PAGINATION ----------------------
+///////////////////////////////////////////////////
+$pagination-margin-start:           5px;
+$pagination-padding-y-sm:           .25rem;
+$pagination-padding-x-sm:           .5rem;
+$pagination-padding-y-lg:           .65rem;
+$pagination-padding-x-lg:           1.25rem;
+$pagination-margin-start:           3px;
+$pagination-border-color:           $gray-300;
+$pagination-disabled-color:         $gray-500;
+
+$pagination-color:                  $gray-900;
+$pagination-active-color:           $gray-100;
+$pagination-active-bg:              $gray-900;
+$pagination-active-border-color:    $gray-900;
+
+////////////////////////////////////////////////////
+//---------------- DROPDOWN ----------------------
+///////////////////////////////////////////////////
+$dropdown-item-padding-x:           10px;
+
+////////////////////////////////////////////////////
+//---------------- TAOST ----------------------
+///////////////////////////////////////////////////
+$toast-border-width:                0px;
+
+////////////////////////////////////////////////////
+//---------------- MODAL ----------------------
+///////////////////////////////////////////////////
+$modal-content-border-width:        0;
+$modal-sm:                          350px;
+
+////////////////////////////////////////////////////
+//---------------- LIST ----------------------
+///////////////////////////////////////////////////
+$list-group-color:                  $gray-900;
+$list-group-bg:                     transparent;
+$list-group-border-color:           transparent;
+
+
+////////////////////////////////////////////////////
+//---------------- PLACEHOLDER ----------------------
+///////////////////////////////////////////////////
+$placeholder-opacity-max:           .25;
+$placeholder-opacity-min:           .1;
+
+
+////////////////////////////////////////////////////
+//---------------- SHADOW ----------------------
+///////////////////////////////////////////////////
+$box-shadow:                  0 .5rem 1rem rgba($black, .15);
+$box-shadow-xss:              0 .5rem 1rem rgba(0, 0, 0, 0.03);
+$box-shadow-xs:               0 .5rem 1.875rem rgba(0, 0, 0, 0.05);
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+$box-shadow-md:               0 .75rem 2rem rgba($black, .1);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .18);
+$box-shadow-xl:               0 1.125rem 3rem rgba($black, .30);
+
+
+$tooltip-bg:                        $gray-900;
+$tooltip-opacity:                   1;
+$tooltip-font-size:                 $h5-font-size;
+$tooltip-padding-y:                 0.45rem;
+$tooltip-padding-x:                 0.9rem;

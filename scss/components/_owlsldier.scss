@@ -1,0 +1,272 @@
+.nav-disabled {
+	.owl-nav {
+		display: none;
+	}
+}
+.dot-disabled {
+	.owl-dots {
+		display: none;
+	}
+}
+.owl-carousel-visible {
+    .owl-stage-outer {
+        overflow: visible !important;
+    }
+}
+.owl-carousel {
+	.owl-nav {
+		button {
+			// margin: 0 !important;
+			padding: 0 !important;
+			color: $gray-100 !important;
+			&:hover {
+				background-color: transparent !important;
+				color: #fff !important;
+			}
+		}
+	}
+	&.nav-leftside {
+		.owl-nav {
+			position: absolute;
+			margin-top: 0px;
+			bottom:10%;
+			button {
+				font-size:40px; 
+				line-height: 1;
+			}
+		}
+	}
+	&.dot-line {
+		.owl-dots {
+			margin-top: 50px !important;
+			button {
+				width: 33.3%;
+				height: 5px !important;
+				span {
+					margin:0 !important;
+					width: 100%;
+					height: 3px !important;
+					border-radius: 0;
+					background-color: #444;
+				}
+				&.active {
+					span {
+						height: 5px !important;
+						top:1px;
+						position: relative;
+						background-color: var(--theme-color) !important;
+					}
+					&:hover span {background-color: var(--theme-color) !important;}
+				}
+				&:hover {
+					span {
+						 background: #444 !important;
+					}
+				}
+			}
+		}
+	}
+}
+.portfolio-tab {
+	li {
+		display: flex;
+		@include media-breakpoint-down(md) {
+			float: left;
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+		span {
+			text-transform: uppercase;
+			font-family: 'RajdhaniSemiBold';
+			font-size: 17px;
+			padding: 10px 40px;
+			border-radius: 40px;
+			border:2px $gray-800 solid;
+			cursor: pointer;
+			color:$gray-800;
+			@include media-breakpoint-down(lg) {
+				font-size: 15px;
+				padding: 10px 20px;
+				border-width: 2px;
+			}
+			@include media-breakpoint-down(md) {
+				font-size: 15px;
+				padding: 10px 16px;
+			}
+		}
+		&.active {
+			background-color: transparent;
+			border:0;
+			span {
+				background-color: $gray-800;
+				color: #fff;
+			}
+		}
+	}
+	&.style2 {
+		ul {
+			border-bottom: 1px solid $gray-200;
+			li {
+				span {
+					border: 0;
+					padding: 8px 0px;
+					border-radius: 0;
+					margin:0 20px;
+					font-size: 19px;
+					text-transform: capitalize;
+				}
+				&.active {
+					background-color: transparent;
+					border:0;
+					span {
+						background-color: transparent;
+						color:$gray-800;
+						border-bottom: 2px solid $gray-800;
+					}
+				}
+			}
+		}
+
+	}
+}
+.portfolio-grid {
+	.portfolio {display: none;}
+}
+
+.banner-pattern {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	.pattern1 {
+		position: absolute;
+		left:8%;
+		top: 10%;
+		width: 25px;
+	}
+	.pattern2 {
+		position: absolute;
+		left:10%;
+		bottom: 10%;
+	}
+	.pattern3 {
+		position: absolute;
+		left:40%;
+		top: 2%;
+		width: 80px;
+	}
+	.pattern4 {
+		position: absolute;
+		left:45%;
+		bottom: 30%;
+		width: 30px;
+	}
+	.pattern5 {
+		position: absolute;
+		right:15%;
+		top: 10%;
+	}
+	.pattern6 {
+		position: absolute;
+		right:40%;
+		top: 1%;
+		width: 65px;
+	}
+}
+
+.slider-7 {
+	padding-top: 150px;
+	padding-bottom: 350px;
+	.slider-wrap-7 {
+		width: 90%;
+		margin:0 auto;	
+		@include media-breakpoint-down(xxl) {
+			width: 100%;
+			margin-top: 75px;
+		}
+		@include media-breakpoint-down(sm) {
+			margin-top: 0;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 100px;
+	}
+	
+	.round-image-cirlce {
+		z-index: 1;
+	}
+	.owl-carousel {
+		margin-top: 000px;
+		top:50px;
+		.owl-item {
+			// visibility: hidden;
+			padding: 40px;
+			transition: all 0.4s ease;
+			@include media-breakpoint-down(xxl) {padding: 20px;}
+			@include media-breakpoint-down(xl) {padding: 50px;}
+			@include media-breakpoint-down(lg) {padding: 10px;}
+			&.active {
+				visibility: visible;
+				&.center {
+					transform: translate(0, 270px);
+					// @include media-breakpoint-down(sm) {transform: translate(0, 0px);}
+				}
+				&.leftcenter {
+					transform: translate(0, 170px) rotate(8deg);
+					// @include media-breakpoint-down(sm) {transform: translate(0, 0px) rotate(0deg);}
+				}
+				&.rightcenter {
+					transform: translate(0, 170px) rotate(-8deg);
+					// @include media-breakpoint-down(sm) {transform: translate(0, 0px) rotate(0deg);}
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+.two-nft {
+	.owl-item {
+		transition: all 0.4s ease;
+		&.active {
+			transform: scale(0.9);
+		}
+	}
+	.owl-nav {
+		padding-left: 10px;
+		text-align: left;
+		button {
+			i {
+				font-size: 30px;
+				color: $gray-800;
+			}
+		}
+	}
+}
+
+.banner-side-wrap {
+	position: relative;
+	&:after {
+		content: '';
+		width: 50%;
+		position: absolute;
+		z-index: -1;
+		height: 100%;
+		background-image: url(../images/bg-32.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		top:0;
+		right:0;
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+}
+
+.banner-wrapper.style17 {
+	.banner-image {
+		max-width: 130%;
+		float: right;
+	}
+}

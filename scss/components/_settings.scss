@@ -1,0 +1,90 @@
+.switchcolor-wrap {
+    a {
+        width: 12%;
+        height: 60px;
+        border-radius: 5px;
+        overflow: hidden;
+        border:3px transparent solid;
+        display: flex;
+        justify-content: center;
+        margin-right: .8%;
+        text-align: center;
+        background-color: #f1f1f1;
+        span {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px; 
+            display: flex;
+            margin-top: auto;
+            margin-bottom: auto;
+
+        }
+        &.active {
+            border-color:var(--theme-color) ; 
+        }
+    }
+    a.color-theme-primary {
+        span {background-color: #2754e6;}
+    }
+    a.color-theme-blue {
+        span {background-color: #1A237E;}
+    }
+    a.color-theme-cyan {
+        span {background-color: #006064;}
+    }
+
+    a.color-theme-teal {
+        span {background-color: #004D40;}
+    }
+    a.color-theme-green {
+        span {background-color: #1B5E20;}
+    }
+
+    a.color-theme-lime {
+        span {background-color: #827717;}
+    }
+
+    a.color-theme-yellow {
+        span {background-color: #B8FB04;}
+    }
+
+    a.color-theme-orange {
+        span {background-color: #E50202;}
+    }
+
+}
+
+.btn.text-gray-900 {color:var(--theme-color-light) !important;}
+
+body[data-color='color-theme-primary'] {
+    --theme-color-light: #fff;
+    --theme-color: #2754e6;
+}
+body[data-color='color-theme-blue'] {
+    --theme-color-light: #fff;
+    --theme-color: #1A237E;
+}
+body[data-color='color-theme-cyan'] {
+    --theme-color-light: #fff;
+    --theme-color: #006064;
+}
+body[data-color='color-theme-teal'] {
+    --theme-color-light: #fff;
+    --theme-color: #004D40;
+}
+body[data-color='color-theme-green'] {
+    --theme-color-light: #fff;
+    --theme-color: #1B5E20;
+}
+body[data-color='color-theme-lime'] {
+    --theme-color-light: #fff;
+    --theme-color: #827717;
+}
+body[data-color='color-theme-yellow'] {
+    --theme-color-light: #212529;
+    --theme-color: #B8FB04;
+}
+body[data-color='color-theme-orange'] {
+    --theme-color-light: #fff;
+    --theme-color: #E50202;
+}

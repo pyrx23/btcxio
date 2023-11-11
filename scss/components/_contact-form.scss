@@ -1,0 +1,33 @@
+.contact-form {
+	&.style1 {
+		.form-control {
+			color:$gray-900;
+			border-bottom: 2px solid $gray-500 !important;
+		}
+		.form-control::-webkit-input-placeholder {color: $gray-700 !important;}
+		.form-control::-moz-placeholder {color: $gray-700 !important;}
+		.form-control:-ms-input-placeholder {color: $gray-700 !important;}
+		.form-control:-moz-placeholder {color: $gray-700 !important;}
+	}
+	&.style2 {
+		.form-control {
+			color:$gray-900;
+			border-bottom: 2px solid $gray-500 !important;
+		}
+		.form-control::-webkit-input-placeholder {color: $gray-400 !important;}
+		.form-control::-moz-placeholder {color: $gray-400 !important;}
+		.form-control:-ms-input-placeholder {color: $gray-400 !important;}
+		.form-control:-moz-placeholder {color: $gray-400 !important;}
+	}
+
+	&.style3 {
+		.form-control {
+			color:$gray-900;
+			border-bottom: 2px solid $gray-800 !important;
+		}
+		.form-control::-webkit-input-placeholder {color: $gray-700 !important;}
+		.form-control::-moz-placeholder {color: $gray-700 !important;}
+		.form-control:-ms-input-placeholder {color: $gray-700 !important;}
+		.form-control:-moz-placeholder {color: $gray-700 !important;}
+	}
+}

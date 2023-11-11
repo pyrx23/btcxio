@@ -1,0 +1,355 @@
+ol.roadmap-wrapper {
+	width: 1500px;
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 12%;
+    padding-left: 0;
+    &:after {
+    	content: "";
+	    display: block;
+	    width: 100%;
+	    height: 2px;
+	    overflow: hidden;
+	    border:2px $gray-600 dashed;
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    transform: translate(0, -50%);
+	    z-index: -1;
+    }
+	li {
+		list-style-type: none;
+	    position: relative;
+	    cursor: pointer;
+	    span {
+	    	position: absolute;
+		    bottom: 100%;
+		    left: 50%;
+		    transform: translate(-50%, 0);
+		    display: inline-block;
+		    text-align: center;
+		    text-align: center;
+		    width: 100px;
+	    }
+	    .roadmap-content {
+	    	position: absolute;
+		    top: calc(100% + 20px);
+		    left: 50%;
+		    transform: translate(-50%, 0);
+		    display: inline-block;
+		    text-align: center;
+		    text-align: center;
+		    width: 300px;
+	    }
+		&:after {
+			content: "";
+		    display: block;
+		    width: 15px;
+		    height: 15px;
+		    border-radius: 50%;
+		    background-color: $gray-600;
+		}
+	}
+}
+
+ol.roadmap-wrapper-style2 {
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 0%;
+    padding-left: 0;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    &:after {
+    	content: "";
+	    display: block;
+	    width: 300%;
+	    height: 2px;
+	    overflow: hidden;
+	    border:2px $gray-600 dashed;
+	    position: absolute;
+	    top: 50%;
+	    left: -100%;
+	    transform: translate(0, -50%);
+	    z-index: -1;
+	    @include media-breakpoint-down(lg) {display: none;}
+    }
+    @include media-breakpoint-down(xl) {
+    	width: 70%;
+    }
+    @include media-breakpoint-down(lg) {
+    	display: grid;
+    	width: 90%;
+    	padding-top: 0px;
+    	padding-bottom: 0;
+    }
+	li:nth-child(2n+1) {
+		list-style-type: none;
+	    position: relative;
+	    cursor: pointer;
+	    .roadmap-content {
+	    	position: absolute;
+		    bottom: calc(100% + 20px);
+		    left: 0%;
+		    margin-left: 30px;
+		    display: inline-block;
+		    text-align: center;
+		    text-align: left;
+		    width: 275px;
+		    @include media-breakpoint-down(lg) {
+		    	width: 100%;
+		    	position: relative;
+		    	bottom: 0;
+		    	top: 0;
+		    }
+		    &:before {
+				content: "";
+			    display: block;
+			    width: 15px;
+			    height: 15px;
+			    border-radius: 50%;
+			    background-color: $gray-600;
+			    position: absolute;
+			    top:calc(0% + 20px);
+			    left:calc(0% - 30px);
+			}
+			&:after {
+		    	content: "";
+			    display: block;
+			    width: 2px;
+			    height: 100%;
+			    overflow: hidden;
+			    border:2px $gray-600 dashed;
+			    position: absolute;
+			    top: 30px;
+			    left: -25px;
+			    z-index: -1;
+		    }
+
+	    }
+		&:after {
+			content: "";
+		    display: block;
+		    width: 15px;
+		    height: 15px;
+		    border-radius: 50%;
+		    background-color: $gray-600;
+		 	@include media-breakpoint-down(lg) {display: none;}   
+		}
+
+	}
+	li:nth-child(2n) {
+		list-style-type: none;
+	    position: relative;
+	    cursor: pointer;
+	    .roadmap-content {
+	    	position: absolute;
+		    top: calc(100% + 20px);
+		    left: 0%;
+		    margin-left: 30px;
+		    display: inline-block;
+		    text-align: center;
+		    text-align: left;
+		    width: 275px;
+		    @include media-breakpoint-down(lg) {
+		    	width: 100%;
+		    	position: relative;
+		    	bottom: 0;
+		    	top: 0;
+		    }
+		    &:before {
+				content: "";
+			    display: block;
+			    width: 15px;
+			    height: 15px;
+			    border-radius: 50%;
+			    background-color: $gray-600;
+			    position: absolute;
+			    bottom:calc(0% + 20px);
+			    left:calc(0% - 30px);
+			    @include media-breakpoint-down(lg) {bottom: auto; top:0;}
+
+			}
+			&:after {
+		    	content: "";
+			    display: block;
+			    width: 2px;
+			    height: 100%;
+			    overflow: hidden;
+			    border:2px $gray-600 dashed;
+			    position: absolute;
+			    bottom: 30px;
+			    left: -25px;
+			    z-index: -1;
+			    @include media-breakpoint-down(lg) {
+			    	bottom: auto;
+			    	top:25px;
+			    }
+		    }
+	    }
+		&:after {
+			content: "";
+		    display: block;
+		    width: 15px;
+		    height: 15px;
+		    border-radius: 50%;
+		    background-color: $gray-600;
+		    @include media-breakpoint-down(lg) {display: none;}
+		}
+	}
+}
+
+ol.roadmap-wrapper-style2 li:last-child .roadmap-content:after {
+	@include media-breakpoint-down(lg) {display: none;}
+}
+
+.roadmap-divbg {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		left:-50%;
+		top:100px;
+		width: 130px;
+    	height: 179px;
+		background-image: url(../images/pattern-5.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -1;
+		@include media-breakpoint-down(lg) {display: none;}
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		right:-50%;
+		top:100px;
+		width: 130px;
+    	height: 179px;
+		background-image: url(../images/pattern-6.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -1;
+		@include media-breakpoint-down(lg) {display: none;}
+	}
+}
+.roadmap-divbg2 {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		left:-50%;
+		top:100px;
+		width: 130px;
+    	height: 179px;
+		background-image: url(../images/pattern-5.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -1;
+		@include media-breakpoint-down(lg) {display: none;}
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		right:-50%;
+		top:180px;
+		width: 130px;
+    	height: 179px;
+		background-image: url(../images/pattern-6.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -1;
+		@include media-breakpoint-down(lg) {display: none;}
+	}
+}
+.roadmap-divbg4 {
+	position: relative;
+	&:after {
+	    content: "";
+	    position: absolute;
+	    left: -27%;
+	    top: 250px;
+	    width: 101px;
+	    height: 215px;
+	    background-image: url(../images/pattern-7.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    z-index: -1;
+		@include media-breakpoint-down(lg) {display: none;}
+	}
+}
+.roadmap-carousel {
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		top:50%;
+		left:0;
+		height: 2px;
+		border:2px dashed #f5f5f5;
+		margin-top: -33px;
+		z-index: -1;
+	}
+	.owl-nav {
+		margin-top: 0 !important;
+		width: 100%;
+		position: absolute;
+		top:50%;
+		margin: 0;
+		left: 0;
+	}
+	.owl-nav button {		
+		position: absolute;
+		margin-top: -45px !important;
+		i {
+			font-size: 18px;
+		}
+	}
+	.owl-nav button.owl-prev {
+		left:-5px;
+	}
+	.owl-nav button.owl-next {
+		right:-5px;
+	}
+
+	.owl-stage-outer {
+		padding-top: 300px;	
+
+	}
+	
+	.roadmap-div {
+		position: relative;
+		&:after {
+			width: 15px;
+			height: 15px;
+			background-color: $gray-900;
+			content: '';
+			position: absolute;
+			left:50%;
+			margin-left: -8px;
+			top:-35px;
+			border-radius: 15px;
+		}
+		span {
+			width: 100px;
+			position: absolute;
+			left:50%;
+			margin-left: -50px;
+			top:-80px;
+			border-radius: 8px;
+		}
+		&.roadmap-div-reverse {
+			top:-300px;
+			position: absolute;
+			&:after {
+				top:auto;
+				bottom:-29px;
+			}
+			span {
+				top:auto;
+				bottom: -70px;
+			}
+		}
+	}
+}
